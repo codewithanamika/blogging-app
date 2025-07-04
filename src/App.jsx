@@ -4,6 +4,7 @@ import CreateBlog from "./pages/CreateBlog";
 import BlogDetails from "./pages/BlogDetails";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
+import Login from "./pages/Login";
 
 function App() {
   const [blogs, setBlogs] = useState([]);
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home blogs={blogs} />} />
         <Route path="/create" element={<CreateBlog setBlogs={setBlogs} />} />
        <Route path="/blog/:id" element={<BlogDetails blogs={blogs} deleteBlog={deleteBlog} />} />
+       <Route path="/login" element={<Login />} />
 
       </Routes>
     </div>

@@ -9,7 +9,7 @@ export default function BlogDetails({ blogs, deleteBlog }) {
 
    const handleDelete = () => {
     deleteBlog(blog.id);
-    navigate("/"); // go back to home after deleting
+    navigate("/"); 
   };
 
   return (
